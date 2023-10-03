@@ -40,7 +40,6 @@ class RideImpl implements RideService {
           log("PLACE ========> ${from[0].locality}");
           final fromTime = DateFormat('hh:mm a').format(decoded[i+1].deviceTime!);
           final toTime = DateFormat('hh:mm a').format(decoded[i].deviceTime!);
-          // Assign the updated values back to the decoded list
           decoded[i] = decoded[i].copyWith(
             fromLocation: '${from[0].street},${from[0].locality}',
             toLocation: '${toloc[0].street},${toloc[0].locality}',

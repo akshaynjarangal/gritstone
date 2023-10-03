@@ -9,7 +9,6 @@ import 'package:provider/provider.dart';
 import 'src/screens/bottom_nav.dart';
 
 class MyHttpoverrides extends HttpOverrides{
-  
   @override
   HttpClient createHttpClient(SecurityContext? context) {
     return super.createHttpClient(context)
